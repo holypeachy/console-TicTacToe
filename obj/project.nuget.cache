@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mhD3JUGk9LFeK6C9m0ATWr2EEgmXMbwB1M1tJMRWeGTh5D3TbJMFGndI2JMR6e0EHQHcTg+rm+nA5OeHbJKp1g==",
+  "dgSpecHash": "okNGWAIh6z+13vQ/Jke+upBCH/6EGQp0E3xSR0yWtl76xRHZ3jIqCJT3RjAVgoocqLRgKUbktE4SkdHk7/YXGA==",
   "success": true,
   "projectFilePath": "E:\\Code\\VS Code Projects\\TicTacToe\\TicTacToe Checker.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\frank\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\6.0.10\\microsoft.netcore.app.runtime.win-x64.6.0.10.nupkg.sha512",
-    "C:\\Users\\frank\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\6.0.10\\microsoft.windowsdesktop.app.runtime.win-x64.6.0.10.nupkg.sha512",
-    "C:\\Users\\frank\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\6.0.10\\microsoft.aspnetcore.app.runtime.win-x64.6.0.10.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }
