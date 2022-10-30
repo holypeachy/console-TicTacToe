@@ -1,0 +1,30 @@
+E:\Code\VS Code Projects\TicTacToe Checker\bin\Debug\net6.0\TicTacToe Checker.exe
+E:\Code\VS Code Projects\TicTacToe Checker\bin\Debug\net6.0\TicTacToe Checker.deps.json
+E:\Code\VS Code Projects\TicTacToe Checker\bin\Debug\net6.0\TicTacToe Checker.runtimeconfig.json
+E:\Code\VS Code Projects\TicTacToe Checker\bin\Debug\net6.0\TicTacToe Checker.dll
+E:\Code\VS Code Projects\TicTacToe Checker\bin\Debug\net6.0\TicTacToe Checker.pdb
+E:\Code\VS Code Projects\TicTacToe Checker\obj\Debug\net6.0\TicTacToe Checker.csproj.AssemblyReference.cache
+E:\Code\VS Code Projects\TicTacToe Checker\obj\Debug\net6.0\TicTacToe Checker.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\VS Code Projects\TicTacToe Checker\obj\Debug\net6.0\TicTacToe Checker.AssemblyInfoInputs.cache
+E:\Code\VS Code Projects\TicTacToe Checker\obj\Debug\net6.0\TicTacToe Checker.AssemblyInfo.cs
+E:\Code\VS Code Projects\TicTacToe Checker\obj\Debug\net6.0\TicTacToe Checker.csproj.CoreCompileInputs.cache
+E:\Code\VS Code Projects\TicTacToe Checker\obj\Debug\net6.0\TicTacToe Checker.dll
+E:\Code\VS Code Projects\TicTacToe Checker\obj\Debug\net6.0\refint\TicTacToe Checker.dll
+E:\Code\VS Code Projects\TicTacToe Checker\obj\Debug\net6.0\TicTacToe Checker.pdb
+E:\Code\VS Code Projects\TicTacToe Checker\obj\Debug\net6.0\TicTacToe Checker.genruntimeconfig.cache
+E:\Code\VS Code Projects\TicTacToe Checker\obj\Debug\net6.0\ref\TicTacToe Checker.dll
+E:\Code\VS Code Projects\TicTacToe\bin\Debug\net6.0\TicTacToe Checker.exe
+E:\Code\VS Code Projects\TicTacToe\bin\Debug\net6.0\TicTacToe Checker.deps.json
+E:\Code\VS Code Projects\TicTacToe\bin\Debug\net6.0\TicTacToe Checker.runtimeconfig.json
+E:\Code\VS Code Projects\TicTacToe\bin\Debug\net6.0\TicTacToe Checker.dll
+E:\Code\VS Code Projects\TicTacToe\bin\Debug\net6.0\TicTacToe Checker.pdb
+E:\Code\VS Code Projects\TicTacToe\obj\Debug\net6.0\TicTacToe Checker.csproj.AssemblyReference.cache
+E:\Code\VS Code Projects\TicTacToe\obj\Debug\net6.0\TicTacToe Checker.GeneratedMSBuildEditorConfig.editorconfig
+E:\Code\VS Code Projects\TicTacToe\obj\Debug\net6.0\TicTacToe Checker.AssemblyInfoInputs.cache
+E:\Code\VS Code Projects\TicTacToe\obj\Debug\net6.0\TicTacToe Checker.AssemblyInfo.cs
+E:\Code\VS Code Projects\TicTacToe\obj\Debug\net6.0\TicTacToe Checker.csproj.CoreCompileInputs.cache
+E:\Code\VS Code Projects\TicTacToe\obj\Debug\net6.0\TicTacToe Checker.dll
+E:\Code\VS Code Projects\TicTacToe\obj\Debug\net6.0\refint\TicTacToe Checker.dll
+E:\Code\VS Code Projects\TicTacToe\obj\Debug\net6.0\TicTacToe Checker.pdb
+E:\Code\VS Code Projects\TicTacToe\obj\Debug\net6.0\TicTacToe Checker.genruntimeconfig.cache
+E:\Code\VS Code Projects\TicTacToe\obj\Debug\net6.0\ref\TicTacToe Checker.dll
