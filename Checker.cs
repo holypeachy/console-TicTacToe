@@ -77,7 +77,7 @@
 			return isThereWinner;
 		}
 		
-		//Returns X, O, or N meaning no winner. The program as written will never return N.
+		//Returns X, O, or N meaning no winner. The program, as written, will never return N.
 		public static string WhoWins(string[,] board)
 		{
 			if(Check(board))

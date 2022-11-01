@@ -1,6 +1,6 @@
 namespace TicTacToe
 {
-	class MainGame
+	public static class MainGame
 	{
 		static string[,] board = new string[3,3];
 		
@@ -9,16 +9,19 @@ namespace TicTacToe
 			Player playerX = new("X");
 			Player playerO = new("O");
 
+			// Main program loop.
 			bool playing = true;
 			while(playing)
 			{
 				board = new string[,]
 				{
-					{"1", "2", "3"},
-					{"4", "5", "6"},
 					{"7", "8", "9"},
+					{"4", "5", "6"},
+					{"1", "2", "3"},
 				};
-				for (int play = 1; play <= 10; play++)
+				
+				// Game loop.
+				for (int plays = 1; plays<= 10; plays++)
 				{
 					if(Checker.Check(board))
 					{
@@ -36,27 +39,34 @@ namespace TicTacToe
 							Console.WriteLine("PlayerO wins!");
 							break;
 						}
+						else
+						{
+							Console.WriteLine("--!--Winner was not detected, something went wrong--!--");
+							Console.WriteLine("--!--Try naming the players properly--!--");
+						}
 					}
-					if(!Checker.Check(board) && play == 10)
+					if(!Checker.Check(board) && plays == 10)
 					{
 						Console.Clear();
 						BoardPrinter();
 						Console.WriteLine("The game is tied!");
 						break;
 					}
-					if(play % 2 == 0)
+					if(plays % 2 == 0)
 					{
 						Console.Clear();
 						BoardPrinter();
-						playerO.Play();
+						Play(playerO);
 					}
 					else
 					{
 						Console.Clear();
 						BoardPrinter();
-						playerX.Play();
+						Play(playerX);
 					}
 				}
+				
+				// Prompts the user if they wish to play again
 				while(true)
 				{
 					Console.WriteLine("Would you like to play again?(y/n)");
@@ -80,10 +90,10 @@ namespace TicTacToe
 
 		}
 
-		// BoardPrinter prints the board
-		static void BoardPrinter()
+		// Prints the board
+		public static void BoardPrinter()
 		{
-			Console.WriteLine("\n-----TicTacToe 1.0 | Made by HolyPeach-----\n");
+			Console.WriteLine("\n-----TicTacToe 1.1 | Made by HolyPeach-----\n");
 			Console.WriteLine("                |     |     ");
 			Console.WriteLine("             {0}  |  {1}  |  {2}  ", board[0, 0], board[0, 1], board[0, 2]);
 			Console.WriteLine("           _____|_____|_____");
@@ -95,8 +105,8 @@ namespace TicTacToe
 			Console.WriteLine("                |     |     \n");
 		}
 
-		//Checks if the board. Not used the way the program is written
-		static bool IsBoardFull()
+		//Checks if the board is full. Not used.
+		public static bool IsBoardFull()
 		{
 			int counter = 0;
 			foreach (string item in board)
@@ -116,26 +126,27 @@ namespace TicTacToe
 			}
 		}
 	
-		// Check is the place selected has already been played
+		// Check is the place selected has already been played.
 		public static bool IsPlacePlayed(string place)
 		{
 			bool played = false;
+			
 			switch (place)
 			{
 				case "1":
-					if(board[0,0] == "X" || board[0,0] == "O")
+					if (board[2, 0] == "X" || board[2, 0] == "O")
 					{
 						played = true;
 					}
 					break;
 				case "2":
-					if (board[0, 1] == "X" || board[0, 1] == "O")
+					if (board[2, 1] == "X" || board[2, 1] == "O")
 					{
 						played = true;
 					}
 					break;
 				case "3":
-					if (board[0, 2] == "X" || board[0, 2] == "O")
+					if (board[2, 2] == "X" || board[2, 2] == "O")
 					{
 						played = true;
 					}
@@ -159,64 +170,95 @@ namespace TicTacToe
 					}
 					break;
 				case "7":
-					if (board[2, 0] == "X" || board[2, 0] == "O")
+					if (board[0, 0] == "X" || board[0, 0] == "O")
 					{
 						played = true;
 					}
 					break;
 				case "8":
-					if (board[2, 1] == "X" || board[2, 1] == "O")
+					if (board[0, 1] == "X" || board[0, 1] == "O")
 					{
 						played = true;
 					}
 					break;
 				case "9":
-					if (board[2, 2] == "X" || board[2, 2] == "O")
+					if (board[0, 2] == "X" || board[0, 2] == "O")
 					{
 						played = true;
 					}
 					break;
+
+				// This default will never be executed as the program is written.
 				default:
-					Console.WriteLine("Invalid input. Please try again");
+					Console.WriteLine("--!--Invalid input. Please try again...--!--");
+					Console.WriteLine("--!--Something went wrong--!--");
 					break;
 			}
 			return played;
 		}
 	
-		//Places the plaver value into the selected place of the matrix
-		public static void ChangePlace(string place, string player)
+		// Places the player value into the selected place of the matrix.
+		public static void ChangePlace(string place, string value)
 		{
 			switch (place)
 			{
 				case "1":
-					board[0,0] = player;
+					board[2, 0] = value;
 					break;
 				case "2":
-					board[0, 1] = player;
+					board[2, 1] = value;
 					break;
 				case "3":
-					board[0, 2] = player;
+					board[2, 2] = value;
 					break;
 				case "4":
-					board[1, 0] = player;
+					board[1, 0] = value;
 					break;
 				case "5":
-					board[1, 1] = player;
+					board[1, 1] = value;
 					break;
 				case "6":
-					board[1, 2] = player;
+					board[1, 2] = value;
 					break;
-				case "7":
-					board[2, 0] = player;
-					break;
-				case "8":
-					board[2, 1] = player;
-					break;
-				case "9":
-					board[2, 2] = player;
-					break;
+                case "7":
+                    board[0, 0] = value;
+                    break;
+                case "8":
+                    board[0, 1] = value;
+                    break;
+                case "9":
+                    board[0, 2] = value;
+                    break;
 				default:
+					Console.WriteLine("--!--Unexpected Error--!--");
 					break;
+			}
+		}
+
+		// The Play method is the loop in which a player plays. Uses method's in the MainGame class.
+		static void Play(Player player)
+		{
+			while (true)
+			{
+				Console.WriteLine("Player" + player.Value + " is playing");
+				Console.Write("Player" + player.Value + ", select a place to play: ");
+				string? input = Console.ReadLine();
+				if (input == "1" || input == "2" || input == "3" || input == "4" || input == "5" || input == "6" || input == "7" || input == "8" || input == "9")
+				{
+					if (!MainGame.IsPlacePlayed(input))
+					{
+						MainGame.ChangePlace(input, player.Value);
+						break;
+					}
+					else
+					{
+						Console.WriteLine("\nThat spot is already played, select another spot");
+					}
+				}
+				else
+				{
+					Console.WriteLine("\nInvalid input, please try again...");
+				}
 			}
 		}
 	}
