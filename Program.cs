@@ -3,11 +3,15 @@ namespace TicTacToe
 	public static class MainGame
 	{
 		static string[,] board = new string[3,3];
-		
+
 		static void Main()
 		{
-			Player playerX = new("X");
-			Player playerO = new("O");
+			Console.BackgroundColor = ConsoleColor.DarkGreen;
+			Console.ForegroundColor = ConsoleColor.White;
+			Console.Clear();
+			
+			string playerX = "X";
+			string playerO = "O";
 
 			// Main program loop.
 			bool playing = true;
@@ -93,7 +97,7 @@ namespace TicTacToe
 		// Prints the board
 		public static void BoardPrinter()
 		{
-			Console.WriteLine("\n-----TicTacToe 1.1 | Made by HolyPeach-----\n");
+			Console.WriteLine("\n-----TicTacToe 1.2 | Made by HolyPeach-----\n");
 			Console.WriteLine("                |     |     ");
 			Console.WriteLine("             {0}  |  {1}  |  {2}  ", board[0, 0], board[0, 1], board[0, 2]);
 			Console.WriteLine("           _____|_____|_____");
@@ -202,33 +206,15 @@ namespace TicTacToe
 		{
 			switch (place)
 			{
-				case "1":
-					board[2, 0] = value;
-					break;
-				case "2":
-					board[2, 1] = value;
-					break;
-				case "3":
-					board[2, 2] = value;
-					break;
-				case "4":
-					board[1, 0] = value;
-					break;
-				case "5":
-					board[1, 1] = value;
-					break;
-				case "6":
-					board[1, 2] = value;
-					break;
-                case "7":
-                    board[0, 0] = value;
-                    break;
-                case "8":
-                    board[0, 1] = value;
-                    break;
-                case "9":
-                    board[0, 2] = value;
-                    break;
+				case "1": board[2, 0] = value; break;
+				case "2": board[2, 1] = value; break;
+				case "3": board[2, 2] = value; break;
+				case "4": board[1, 0] = value; break;
+				case "5": board[1, 1] = value; break;
+				case "6": board[1, 2] = value; break;
+				case "7": board[0, 0] = value; break;
+				case "8": board[0, 1] = value; break;
+				case "9": board[0, 2] = value; break;
 				default:
 					Console.WriteLine("--!--Unexpected Error--!--");
 					break;
@@ -236,18 +222,18 @@ namespace TicTacToe
 		}
 
 		// The Play method is the loop in which a player plays. Uses method's in the MainGame class.
-		static void Play(Player player)
+		static void Play(string player)
 		{
 			while (true)
 			{
-				Console.WriteLine("Player" + player.Value + " is playing");
-				Console.Write("Player" + player.Value + ", select a place to play: ");
+				Console.WriteLine("Player " + player + " is playing...");
+				Console.Write("Player " + player + ", select a place to play: ");
 				string? input = Console.ReadLine();
 				if (input == "1" || input == "2" || input == "3" || input == "4" || input == "5" || input == "6" || input == "7" || input == "8" || input == "9")
 				{
 					if (!MainGame.IsPlacePlayed(input))
 					{
-						MainGame.ChangePlace(input, player.Value);
+						MainGame.ChangePlace(input, player);
 						break;
 					}
 					else

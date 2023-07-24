@@ -1,2 +1,0 @@
-E:\Code\VS Code Projects\TicTacToe\bin\Debug\net6.0\win-x64\publish\TicTacToe Checker.pdb
-E:\Code\VS Code Projects\TicTacToe\bin\Debug\net6.0\win-x64\publish\TicTacToe Checker.exe
