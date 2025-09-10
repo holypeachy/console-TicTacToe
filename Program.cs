@@ -6,8 +6,6 @@ namespace TicTacToe
 
 		static void Main()
 		{
-			Console.BackgroundColor = ConsoleColor.DarkGreen;
-			Console.ForegroundColor = ConsoleColor.White;
 			Console.Clear();
 			
 			string playerX = "X";
@@ -97,7 +95,7 @@ namespace TicTacToe
 		// Prints the board
 		public static void BoardPrinter()
 		{
-			Console.WriteLine("\n-----TicTacToe 1.2 | Made by HolyPeach-----\n");
+			Console.WriteLine("\n-----TicTacToe 1.3 | Made by HolyPeach-----\n");
 			Console.WriteLine("                |     |     ");
 			Console.WriteLine("             {0}  |  {1}  |  {2}  ", board[0, 0], board[0, 1], board[0, 2]);
 			Console.WriteLine("           _____|_____|_____");
