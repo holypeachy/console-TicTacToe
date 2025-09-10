@@ -11,7 +11,7 @@
 ## 🚀 Getting Started
 Please don't
 ```bash
-git clone git@github.com:holypeachy/flappy-bird-clone.git
+git clone git@github.com:holypeachy/console-TicTacToe.git
 cd console-TicTacToe
 dotnet run
 ```
